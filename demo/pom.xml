@@ -58,17 +58,18 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
+                </plugin>
+                <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <!--docker镜像相关的配置信息-->
                 <configuration>
-                    <!--镜像名，这里用工程名-->
-                    <imageName>${project.artifactId}</imageName>
-                    <!--Dockerfile文件所在目录-->
+                <!--Dockerfile文件所在目录-->
                     <dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>
+                    <registryUrl>182.92.154.11:5000</registryUrl>
+                    <pushImage>true</pushImage>
+                    <imageName>182.92.154.11:5000/${build.finalName}</imageName>
                     <!--TAG,这里用工程版本号-->
                     <imageTags>
                         <imageTag>${project.version}</imageTag>
