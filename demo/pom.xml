@@ -72,7 +72,7 @@
                     <imageName>182.92.154.11:5000/${build.finalName}</imageName>
                     <!--TAG,这里用工程版本号-->
                     <imageTags>
-                        <imageTag>${project.version}</imageTag>
+                        <imageTag>latest</imageTag>
                     </imageTags>
                     <!--构建镜像的配置信息-->
                     <resources>
