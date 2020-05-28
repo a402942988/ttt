@@ -67,8 +67,9 @@
                 <configuration>
                 <!--Dockerfile文件所在目录-->
                     <dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>
-                    <registryUrl>182.92.154.11:5000</registryUrl>
-                    <pushImage>true</pushImage>
+                    <!--推送到仓库OR私服-->
+                    <!--<registryUrl>182.92.154.11:5000</registryUrl>
+                    <pushImage>true</pushImage>-->
                     <imageName>182.92.154.11:5000/${build.finalName}</imageName>
                     <!--TAG,这里用工程版本号-->
                     <imageTags>
