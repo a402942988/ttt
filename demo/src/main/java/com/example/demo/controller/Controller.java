@@ -11,7 +11,7 @@ public class Controller {
     Date date = new Date();
     @RequestMapping("hello")
     public String hello(String name){
-        return name + "，<font color='red'>您好</font>" + date.getTime();
+        return name + "，<font color='red'>您好123</font>" + date.getTime();
     }
 
 }
