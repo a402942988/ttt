@@ -54,7 +54,7 @@
     </dependencies>
 
     <build>
-        <plugins>
+        <!--<plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -63,19 +63,19 @@
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.0.0</version>
-                <!--docker镜像相关的配置信息-->
+                &lt;!&ndash;docker镜像相关的配置信息&ndash;&gt;
                 <configuration>
-                <!--Dockerfile文件所在目录-->
-                    <!--<dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>-->
-                    <!--推送到仓库OR私服-->
-                    <!--<registryUrl>182.92.154.11:5000</registryUrl>
-                    <pushImage>true</pushImage>-->
-                    <imageName>182.92.154.11:5000/${build.finalName}</imageName>
-                    <!--TAG,这里用工程版本号-->
+                &lt;!&ndash;Dockerfile文件所在目录&ndash;&gt;
+                    &lt;!&ndash;<dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>&ndash;&gt;
+                    &lt;!&ndash;推送到仓库OR私服&ndash;&gt;
+                    &lt;!&ndash;<registryUrl>182.92.154.11:5000</registryUrl>
+                    <pushImage>true</pushImage>&ndash;&gt;
+                    &lt;!&ndash;<imageName>182.92.154.11:5000/${build.finalName}</imageName>&ndash;&gt;
+                    &lt;!&ndash;TAG,这里用工程版本号&ndash;&gt;
                     <imageTags>
                         <imageTag>latest</imageTag>
                     </imageTags>
-                    <!--构建镜像的配置信息-->
+                    &lt;!&ndash;构建镜像的配置信息&ndash;&gt;
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
@@ -85,7 +85,7 @@
                     </resources>
                 </configuration>
             </plugin>
-        </plugins>
+        </plugins>-->
         <finalName>demo-www</finalName>
     </build>
 
